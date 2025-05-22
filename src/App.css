@@ -5,7 +5,7 @@
     color: white;
 } */
 #reg,#log {
-  background-image: url('bg.jpeg');
+  background-image: url('assets/bg.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,7 +13,7 @@
   padding-top: 5%;
 }
 #log{
-    background-image: url('loginbg.jpg');
+    background-image: url('assets/loginbg.jpg');
 }
 #table{
     border: 2px solid white; 
@@ -121,7 +121,7 @@
     box-shadow: 2px 2px black;
 }
 .images{
-    /* background-image: url('Memory card photo.png'); */
+    /* background-image: url('assets/Memorycardphoto.png'); */
     background-size: 100% 100%;
     width: 280px;
     height: 350px;
@@ -134,6 +134,10 @@
     font-size: 20px;
     background-color: yellow;
 }
+/* #memory{
+    background-image: url('assets/Memorycardphoto.png');
+} */
+
 
 
 
@@ -147,7 +151,7 @@
 }
 #contactpage{
     display:flex;
-    background-image: url('https://media.istockphoto.com/id/1466890104/photo/contact-us-and-support-concept-and-digital-network-with-blue-space-background.webp?b=1&s=170667a&w=0&k=20&c=QwC6tB9L62PuahdJYOc6Ae0ciLjy1Ti5AcTrwMzBj7E=');
+    background-image: url('assets/contactbg.jpg');
     /* background-color:rgb(46, 255, 255); */
     background-size: cover;
     background-repeat: no-repeat;
