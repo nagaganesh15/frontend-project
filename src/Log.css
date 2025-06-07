@@ -16,6 +16,7 @@
     background-color: blue;
     color: white;
     font-weight: bold;
+    margin-left: 50px;
 }
 #signup:hover{
     background-color: blueviolet;

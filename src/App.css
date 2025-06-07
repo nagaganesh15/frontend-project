@@ -1,15 +1,10 @@
-/* #body{
-    background-image:url(bg.jpeg);
-    background-size: cover;
-    margin-top: 5%;
-    color: white;
-} */
+
 #reg,#log {
   background-image: url('assets/bg.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  min-height: 90vh;
   padding-top: 5%;
 }
 #log{
@@ -35,7 +30,9 @@
     font-size: 24px;
 }
 #name,#email,#pass{
-    font-size: 18px;
+    font-size: 16px;
+    margin-left: -40px;
+    width: 250px;
 }
 #p{
     color: magenta;
@@ -87,10 +84,13 @@
     border: 2px solid black;
 }
 .card{
-    width: 400px;
-    margin-left: 5%;
+    width: 350px;
+    margin-left: 7%;
 }
-
+.card-body a{
+    font-size: 20px;
+    font-weight: 500;
+}
 
 /* Home page styles */
 #Home{
@@ -127,6 +127,7 @@
     height: 350px;
     border: 0px;
     margin-left: 15px;
+    border-radius: 10px;
 }
 .homeplay{
     border-radius: 10px;
@@ -134,9 +135,29 @@
     font-size: 20px;
     background-color: yellow;
 }
-/* #memory{
+.homeplay:hover{
+    background-color: cyan;
+    box-shadow: 1px 2px black;
+}
+.feacturedgames{
+    margin-left: 10%;
+}
+#memory{
     background-image: url('assets/Memorycardphoto.png');
-} */
+    border-radius: 10px;
+}
+#stone{
+    border-radius: 10px;
+    background-image: url('assets/StonePaper.png');
+}
+#guess{
+    border-radius: 10px;
+    background-image: url('assets/Guessthenumber.png');
+}
+
+
+
+
 
 
 
@@ -147,7 +168,7 @@
     margin-left: 10%;
 }
 #contact{
-    margin-left: 20%;
+    margin-left: 10%;
 }
 #contactpage{
     display:flex;
@@ -194,4 +215,167 @@
     font-size: 20px;
     padding-top: 10px;
     color: white;
+}
+
+
+
+
+/* forgotpassword styles */
+
+#forgot{
+background-image: url('data:image/jpeg;base64,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');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 100vh;
+padding-top: 5%;
+}
+#resetpass{
+background-color: deeppink;
+font-size: 22px;
+border-radius: 10px;
+color: white;
+width: 200px;
+}
+#resetpass:hover{
+background-color: blue;
+/* color: blue; */
+}
+
+
+
+
+#selectimage{
+color: red;
+background-image: url('assets/bg.jpeg');
+background-size: cover;
+border-radius: 50%;
+}
+
+
+
+/* Profile styles */ 
+#profiletable td,th{
+padding-left: 40px;
+padding-top: 10px;
+font-size: 19px;
+}
+#profiletable input[type='number']{
+    width: 200px;
+}
+#profiletable button{
+font-size: 20px;
+border-radius: 10px;
+}
+#profileimg{
+width: 150px;
+height: 150px;
+border-radius: 50%;
+background-size: 100% 100%;
+background-image: url('https://th.bing.com/th/id/OIP.sdkCAHYXeg0YLtfIz6-FkgAAAA?w=350&h=350&rs=1&pid=ImgDetMain');
+}
+
+
+/* Leaderboard styles */
+.card{
+    border-radius: 10px;
+}
+.img-fluid{
+    border-radius: 10px;
+}
+.leaderboardgames{
+    text-decoration: none;
+    /* color: rgb(0, 21, 255); */
+    color: black;
+    font-weight: 450;
+}
+.leaderboardgames:hover{
+    color:black;
+}
+.profileimageshowing{
+    width: 30px;
+    height: 30px;
+} 
+#allleader td,th{
+    padding-left: 80px;
+    padding-top: 20px;
+    /* font-size: 20px; */
+}
+#allleader th{
+    font-size: 22px;
+}
+#allleader{
+    font-size: 20px;
+    font-weight: 500;
+}
+#leaderboardnavbar{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid rgb(249, 150, 150); */
+    background-color: gold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+#leaderboardnavbar:hover{
+    background-color: rgb(239, 239, 0);
+}
+
+
+/* memoryleaderboard styles */
+#stonebody{
+    background-image: url('assets/stonebg.jpeg');
+    background-size: 100% 100%;
+    min-height: 90vh;
+    color: white;
+}
+#guessbody{
+    background-image: url('assets/guessbg.jpeg');
+    background-size: 100% 100%;
+    min-height: 90vh;
+    color: white;   
+}
+#waterbody{
+    background-image: url('assets/waterbg.jpeg');
+    background-size: 100% 100%;
+    min-height: 90vh;
+    color: white;   
+}
+#brickbody{
+    background-image: url('assets/brickbg.jpg');
+    background-size: 100% 100%;
+    min-height: 90vh;
+    color: white;   
+}
+#memorybody{
+    /* background-image: url('assets/memorybg.png'); */
+    background-image: url('assets/memorybg1.png');
+    color: white;
+    background-size: 100% 100%;
+    min-height: 90vh;
+    /* position: absolute;
+    width: 100%;
+    background-position: center;
+    overflow: hidden; */
+    /* font-size: 21px; */
+}
+/* #memorybody::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(255, 192, 203,0.93);
+}
+#memorycontent{
+    position: relative;
+    color: black;
+} */
+
+#profilebody{
+    background-image: url('assets/profilebg.jpg');
+    background-size: 100% 100%;
+    min-height: 90vh;
 }

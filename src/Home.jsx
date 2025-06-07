@@ -1,4 +1,7 @@
 import React from 'react'
+import './App.css'
+import './WhyChooseUs'
+import WhyChooseUs from './WhyChooseUs'
 
 export const Home = () => {
   return (
@@ -13,10 +16,10 @@ export const Home = () => {
         <div>
             <center>
                 <h1>Feactured Games</h1>
-                <div style={{display:'flex'}}>
-                    <div>
+                <div style={{display:'flex',marginBottom:'100px'}}>
+                    <div className='feacturedgames'>
                         <div>
-                            <button style={{backgroundImage:"url('Memory card photo.png')"}} className='images'></button>
+                            <button id='memory' className='images'></button>    
                         </div>
                         <div>
                             <center>
@@ -25,57 +28,32 @@ export const Home = () => {
                             </center>
                         </div>
                     </div>
-                    <div>
+                    <div className='feacturedgames'>
                         <div>
-                            <button style={{}} className='images'></button>
+                            <button id='stone' className='images'></button>
                         </div>
                         <div>
                             <center>
-                                <h4>IT & SoftWare</h4>
-                                <button>Play</button>
+                                <h4>Stone Paper Scrissor</h4>
+                                <button className='homeplay'>Play</button>
                             </center>
                         </div>
                     </div>
-                    <div>
+                    <div className='feacturedgames'>
                         <div>
-                            <button style={{}} className='images'></button>
+                            <button id='guess' className='images'></button>
                         </div>
                         <div>
                             <center>
-                                <h4>Business</h4>
-                                <button>Play</button>
+                                <h4>Guess the Number</h4>
+                                <button className='homeplay'>Play</button>
                             </center>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <button style={{}} className='images'></button>
-                        </div>
-                        <div>
-                            <center>
-                                <h4>Teaching & Academics</h4>
-                                <button>Play</button>
-
-                            </center>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <button style={{}} className='images'></button>
-                        </div>
-                        <div>
-                            <center>
-                                <h4>Office Productivity</h4>
-                                <button>Play</button>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    
                 </div>
             </center>
         </div>
+        <WhyChooseUs/>
     </div>
   )
 }
