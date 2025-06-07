@@ -21,7 +21,7 @@ export const Login = () => {
                 localStorage.setItem("email",res.data.email)
                 toast.success("Login Successfull")
                 localStorage.setItem("login","1");
-                navigate("/Games")
+                navigate("/frontend-project")
             }
         }
         catch(err){

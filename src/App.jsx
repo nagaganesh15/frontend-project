@@ -27,7 +27,7 @@ export const App = () => {
       {/* <Home/> */}
       {/* <Leaderboard/> */}
       <Routes>
-        <Route path='/Games' element={<Home/>}></Route>
+        <Route path='/frontend-project' element={<Home/>}></Route>
         <Route path='/Contact' element={<Contact/>}></Route>
         <Route path='/Registration' element={<Registration/>}></Route>
         <Route path='/Login' element={<Login/>}></Route>

@@ -39,7 +39,7 @@ export const Nav = () => {
    
     <div>
         <div id="navbar">
-            <Link to='/Games' className='dec'>Home</Link>
+            <Link to='/frontend-project' className='dec'>Home</Link>
             {/* <Link to='/Help' className='dec'>About</Link> */}
             <Link to='/AllGames' id="about" className='dec'>All Games</Link>
             <Link to='/AllLeaderboard' className='dec'>Leaderboard</Link>
